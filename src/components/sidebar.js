@@ -31,7 +31,7 @@ const Sidebar = ({ children }) => {
   })
 
   return (
-    <div className={`md:h-full md:w-1/4 md:flex-shrink-0 flex flex-row md:flex-col`}>
+    <div className={`md:h-full md:w-1/4 md:flex-shrink-0 flex flex-row md:flex-col z-10`}>
       {courses}
     </div>
   )

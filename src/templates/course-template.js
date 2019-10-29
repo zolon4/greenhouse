@@ -1,10 +1,8 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import Sidebar from '../components/sidebar'
 
 export default function courseTemplate({ data: {airtable: {data: course}} }) {
-  console.log(course)
   return (
     <Layout>
       <div className="flex flex-col md:flex-row h-full">
@@ -22,7 +20,6 @@ export default function courseTemplate({ data: {airtable: {data: course}} }) {
           <p className="text-xl mb-10">Pricing: {course.price}</p>
         </div>
       </div>
-
     </Layout>
   )
 }
