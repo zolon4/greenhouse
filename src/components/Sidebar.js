@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 
 const Sidebar = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query coursesQuery {
+    {
       allAirtable {
         edges {
           node {
