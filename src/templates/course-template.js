@@ -24,7 +24,6 @@ export default function courseTemplate({ data: {airtable: {data: course}} }) {
   )
 }
 
-
 export const query = graphql`
   query GetCourse($path: String!) {
     airtable(table: { eq: "Courses" }, data: { path: { eq: $path } }) {

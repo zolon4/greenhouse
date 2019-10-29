@@ -7,21 +7,10 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import Sidebar from "./Sidebar"
 import Header from "./header"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <div className="w-screen bg-green h-screen overflow-hidden text-yellow">
       <Header siteTitle={"Greenhouse"} />
