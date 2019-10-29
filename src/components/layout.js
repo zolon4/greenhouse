@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import Sidebar from "./Sidebar"
 import Header from "./header"
 
 const Layout = ({ children }) => {
@@ -23,11 +23,14 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <body className="p-8 w-screen bg-green h-screen overflow-hidden text-yellow">
+    <div className="w-screen bg-green h-screen overflow-hidden text-yellow">
       <Header siteTitle={"Greenhouse"} />
-      <main className="">{children}</main>
+      <main className="p-8 h-full flex md:flex-row flex-col">
+        <Sidebar />
+        {children}
+      </main>
       <footer></footer>
-    </body>
+    </div>
   )
 }
 
