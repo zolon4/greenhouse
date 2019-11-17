@@ -3,11 +3,11 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header className="bg-green mb-0 pl-8 pt-8">
+  <header className="mb-0 pl-12 pt-12 ">
     <div>
       <h1 className="text-2xl">
         <Link className="text-yellow" to="/">
-          {siteTitle}
+          <div className="bg-yellow w-24 h-24 rounded-full" />
         </Link>
       </h1>
     </div>

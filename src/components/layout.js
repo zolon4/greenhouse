@@ -7,18 +7,13 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Sidebar from "./Sidebar"
 import Header from "./header"
 
 const Layout = ({ children }) => {
   return (
-    <div className="w-screen bg-green h-screen overflow-hidden text-yellow">
-      <Header siteTitle={"Greenhouse"} />
-      <main className="p-8 h-full flex md:flex-row flex-col">
-        <Sidebar />
-        {children}
-      </main>
-      <footer></footer>
+    <div className="text-yellow bg-green">
+      <Header />
+      <main className="p-8 h-full flex md:flex-row flex-col">{children}</main>
     </div>
   )
 }

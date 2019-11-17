@@ -31,7 +31,9 @@ function SEO({ description, lang, meta, title }) {
     <Helmet
       htmlAttributes={{
         lang,
+        class: "bg-green",
       }}
+      bodyAttributes={{ class: "bg-green" }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[

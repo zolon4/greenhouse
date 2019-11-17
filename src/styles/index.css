@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  @apply bg-green;
+}
+
+.course-name {
+  top: 100px;
+  right: 50px;
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+  font-size: 96px;
+}
+
+@media screen and (max-width: 768px) {
+  .course-name {
+    transform: unset;
+    font-size: 4rem;
+  }
+}
