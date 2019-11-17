@@ -21,7 +21,9 @@ function IndexPage() {
 
   let courses = data.allAirtable.edges
   var item = courses[Math.floor(Math.random() * courses.length)].node.data
-  window.location.href = `/${item.path}`
+  if (typeof window !== "undefined") {
+    window.location.href = `/${item.path}`
+  }
   return <div className="h-screen w-screen bg-yellow" />
 }
 
