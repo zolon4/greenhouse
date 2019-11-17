@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
   return (
     <div className="text-yellow bg-green">
       <Header />
-      <main className="p-8 h-full flex md:flex-row flex-col">{children}</main>
+      <main className="p-12 h-full flex md:flex-row flex-col">{children}</main>
     </div>
   )
 }
